@@ -16,23 +16,37 @@ main{max-width:1080px;margin:0 auto;padding:20px 20px 32px}a{color:#d7263d;text-
 .letter{font-weight:800;color:#fff;background:#d7263d;border-radius:6px;padding:0 7px;font-size:.85rem}
 .word{font-size:.75rem;font-weight:700;border-radius:999px;padding:1px 9px}
 .card h3{margin:4px 0 2px;font-size:1.05rem}.card h3 a{color:#222}.card p{margin:2px 0;color:#444;font-size:.93rem}.card .small{font-size:.78rem;color:#999;margin-top:4px}.card .small a{color:#c9667a}
+.count{flex:none;text-align:center;min-width:200px}.num{font-size:3.4rem;font-weight:800;color:#222;line-height:1}.num b{color:#d7263d}
+.numlbl{font-size:1.15rem;font-weight:700;color:#444;margin-top:2px}.dots{display:flex;gap:6px;justify-content:center;margin-top:10px}
+.dot{width:16px;height:16px;border-radius:50%;background:#fbe3e8;border:2px solid #f3b8c4}.dot.on{background:#1f9d5c;border-color:#1f9d5c}
+.weighted{display:flex;gap:12px;align-items:center;margin-top:14px;background:#fafafa;border-radius:12px;padding:8px 12px}.wring{flex:none}
+.weighted b{display:block;font-size:.95rem;color:#333}.weighted span{font-size:.85rem;color:#666}
 .foot{text-align:center;font-size:.85rem;margin-top:20px}
-@media(max-width:520px){.hero{justify-content:center;text-align:center}.big svg{width:170px;height:170px}.grid{grid-template-columns:1fr}header{padding:14px 16px}main{padding:16px 14px}}
+@media(max-width:520px){.hero{justify-content:center;text-align:center}.weighted{text-align:left}.grid{grid-template-columns:1fr}header{padding:14px 16px}main{padding:16px 14px}}
 </style></head><body>
-<header><h1>🍓 Project Trivia: Sprint 8</h1><span class="upd">Updated Sun Oct 11, 6:15 PM ET</span></header>
+<header><h1>🍓 Project Trivia: Sprint 8</h1><span class="upd">Updated Sun Oct 11, 7:53 PM ET</span></header>
 
 <main><section id="sprint8">
 <div class="hero">
-  <div class="big"><svg width="200" height="200" viewBox="0 0 200 200" role="img" aria-label="67% complete">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d7263d"/><stop offset="1" stop-color="#ff5a7a"/></linearGradient></defs>
-<circle cx="100.0" cy="100.0" r="91.0" fill="none" stroke="#fbe3e8" stroke-width="18"/>
-<circle cx="100.0" cy="100.0" r="91.0" fill="none" stroke="url(#g)" stroke-width="18" stroke-linecap="round"
- stroke-dasharray="571.8" stroke-dashoffset="188.7" transform="rotate(-90 100.0 100.0)"/>
-<text x="50%" y="95" text-anchor="middle" font-size="46" font-weight="800" fill="#222">67%</text><text x="50%" y="139" text-anchor="middle" font-size="17" fill="#777">5 of 9 done</text>
-</svg></div>
+  <div class="count">
+    <div class="num"><b>5</b> of 9</div>
+    <div class="numlbl">pieces done</div>
+    <div class="dots" aria-hidden="true"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+  </div>
   <div class="herotxt">
     <h2>Sprint 8: Quizmaster hosting</h2>
-    <p>Five of nine pieces are done. The host screens passed every check (Codex, Backend and Mobile) on the latest version and now wait only for the Product Lead&#x27;s go-ahead. The question importer needs one more small fix after Codex found another issue.</p>
+    <p>5 of 9 pieces are done, and the question importer is now merged. The host screens are approved but are being updated to merge cleanly with the latest code, and work on the badge names has started.</p>
+    <div class="weighted">
+      <div class="wring"><svg width="96" height="96" viewBox="0 0 96 96" role="img" aria-label="Weighted progress 64%">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d7263d"/><stop offset="1" stop-color="#ff5a7a"/></linearGradient></defs>
+<circle cx="48.0" cy="48.0" r="43.0" fill="none" stroke="#fbe3e8" stroke-width="10"/>
+<circle cx="48.0" cy="48.0" r="43.0" fill="none" stroke="url(#g)" stroke-width="10" stroke-linecap="round"
+ stroke-dasharray="270.2" stroke-dashoffset="97.3" transform="rotate(-90 48.0 48.0)"/>
+<text x="50%" y="56" text-anchor="middle" font-size="24" font-weight="800" fill="#222">64%</text>
+</svg></div>
+      <div><b>Weighted progress (average of each piece's stage)</b>
+      <span>Each piece counts from 0% (not started) to 100% (done) by how far along it is, and this is the average of all 9.</span></div>
+    </div>
   </div>
 </div>
 <div class="actions"><h3>Your action items</h3><ul><li class="none"><span class="tick">✓</span><span>Nothing needed from you right now.</span></li></ul></div>
@@ -61,8 +75,8 @@ main{max-width:1080px;margin:0 auto;padding:20px 20px 32px}a{color:#d7263d;text-
   <div class="txt">
     <div class="row"><span class="letter">B</span><span class="word" style="color:#0f7a4a;background:#e3f6ec">Done</span></div>
     <h3><a href="https://github.com/Strawberry-Jam-Games/project-trivia/issues/145">Quiz rulebook</a></h3>
-    <p>The rules for how a hosted quiz is built, saved and picked up again, so nothing gets lost.</p>
-    <p class="small">Done · <a href="https://github.com/Strawberry-Jam-Games/project-trivia/issues/145">#145</a> · <a href="https://github.com/Strawberry-Jam-Games/project-trivia/pull/154">PR</a></p>
+    <p>The rules for how a hosted quiz is built, saved and picked up again, plus the tool that loads the questions safely.</p>
+    <p class="small">Done · <a href="https://github.com/Strawberry-Jam-Games/project-trivia/issues/145">#145</a> · <a href="https://github.com/Strawberry-Jam-Games/project-trivia/pull/157">PR</a></p>
   </div>
 </article><article class="card">
   <div class="ring"><svg width="92" height="92" viewBox="0 0 92 92" role="img" aria-label="100% complete">
@@ -107,32 +121,32 @@ main{max-width:1080px;margin:0 auto;padding:20px 20px 32px}a{color:#d7263d;text-
     <p class="small">Done · <a href="https://github.com/Strawberry-Jam-Games/project-trivia/issues/148">#148</a> · <a href="https://github.com/Strawberry-Jam-Games/project-trivia/pull/159">PR</a></p>
   </div>
 </article><article class="card">
-  <div class="ring"><svg width="92" height="92" viewBox="0 0 92 92" role="img" aria-label="80% complete">
+  <div class="ring"><svg width="92" height="92" viewBox="0 0 92 92" role="img" aria-label="40% complete">
 <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d7263d"/><stop offset="1" stop-color="#ff5a7a"/></linearGradient></defs>
 <circle cx="46.0" cy="46.0" r="41.0" fill="none" stroke="#fbe3e8" stroke-width="10"/>
 <circle cx="46.0" cy="46.0" r="41.0" fill="none" stroke="url(#g)" stroke-width="10" stroke-linecap="round"
- stroke-dasharray="257.6" stroke-dashoffset="51.5" transform="rotate(-90 46.0 46.0)"/>
-<text x="50%" y="54" text-anchor="middle" font-size="22" font-weight="800" fill="#222">80%</text>
+ stroke-dasharray="257.6" stroke-dashoffset="154.6" transform="rotate(-90 46.0 46.0)"/>
+<text x="50%" y="54" text-anchor="middle" font-size="22" font-weight="800" fill="#222">40%</text>
 </svg></div>
   <div class="txt">
     <div class="row"><span class="letter">F</span><span class="word" style="color:#b4235a;background:#ffe4ee">In review</span></div>
     <h3><a href="https://github.com/Strawberry-Jam-Games/project-trivia/issues/149">Quizmaster screens</a></h3>
     <p>The new Host a Quiz button and the screens a host uses to run a quiz night.</p>
-    <p class="small">Codex clean · <a href="https://github.com/Strawberry-Jam-Games/project-trivia/issues/149">#149</a> · <a href="https://github.com/Strawberry-Jam-Games/project-trivia/pull/160">PR</a></p>
+    <p class="small">In review · <a href="https://github.com/Strawberry-Jam-Games/project-trivia/issues/149">#149</a> · <a href="https://github.com/Strawberry-Jam-Games/project-trivia/pull/160">PR</a></p>
   </div>
 </article><article class="card">
-  <div class="ring"><svg width="92" height="92" viewBox="0 0 92 92" role="img" aria-label="0% complete">
+  <div class="ring"><svg width="92" height="92" viewBox="0 0 92 92" role="img" aria-label="20% complete">
 <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d7263d"/><stop offset="1" stop-color="#ff5a7a"/></linearGradient></defs>
 <circle cx="46.0" cy="46.0" r="41.0" fill="none" stroke="#fbe3e8" stroke-width="10"/>
 <circle cx="46.0" cy="46.0" r="41.0" fill="none" stroke="url(#g)" stroke-width="10" stroke-linecap="round"
- stroke-dasharray="257.6" stroke-dashoffset="257.6" transform="rotate(-90 46.0 46.0)"/>
-<text x="50%" y="54" text-anchor="middle" font-size="22" font-weight="800" fill="#222">0%</text>
+ stroke-dasharray="257.6" stroke-dashoffset="206.1" transform="rotate(-90 46.0 46.0)"/>
+<text x="50%" y="54" text-anchor="middle" font-size="22" font-weight="800" fill="#222">20%</text>
 </svg></div>
   <div class="txt">
-    <div class="row"><span class="letter">G</span><span class="word" style="color:#6b6b6b;background:#efefef">Blocked</span></div>
+    <div class="row"><span class="letter">G</span><span class="word" style="color:#a85a00;background:#fff1dc">In progress</span></div>
     <h3><a href="https://github.com/Strawberry-Jam-Games/project-trivia/issues/150">Badge names</a></h3>
     <p>Shows a name under each earned badge: Einstein, Newton and Hawking.</p>
-    <p class="small">Not started · <a href="https://github.com/Strawberry-Jam-Games/project-trivia/issues/150">#150</a></p>
+    <p class="small">Drafting · <a href="https://github.com/Strawberry-Jam-Games/project-trivia/issues/150">#150</a></p>
   </div>
 </article><article class="card">
   <div class="ring"><svg width="92" height="92" viewBox="0 0 92 92" role="img" aria-label="20% complete">
